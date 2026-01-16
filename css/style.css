@@ -596,10 +596,16 @@ footer {
 
 @media (max-width: 605px) {
  .btn-outline {
-    padding: 1rem;
+    padding: 0.5rem;
+    font-size: 0.8em;
  }
 
 .hero-content h1 {
     font-size: 2.5rem;
  }
+
+.btn-primary {
+    font-size: 0.8em;
+    padding: 0.5rem;
+}
 }
