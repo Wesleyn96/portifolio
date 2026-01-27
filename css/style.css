@@ -540,6 +540,185 @@ footer {
     margin-top: 0.5rem;
 }
 
+/* --- ESTILOS DA NOVA SESSÃO DE HABILIDADES --- */
+.skills-section {
+    padding: 100px 10%;
+    background: var(--bg-secondary);
+}
+
+.skills-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-category h3 {
+    font-size: 1.2rem;
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-box {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.skill-item i {
+    font-size: 2.5rem;
+    transition: transform 0.2s;
+}
+
+.skill-item span {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.skill-item:hover i {
+    transform: scale(1.2);
+}
+
+/* --- ESTILOS DO DIÁRIO (TIMELINE) --- */
+.journal-section {
+    padding: 100px 10%;
+    background: var(--bg-primary); /* Contraste com a sessão anterior */
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 30px; /* Espaço para a linha */
+}
+
+/* Linha vertical */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent-primary), transparent);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -36px; /* Ajuste para centralizar na linha */
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent-primary);
+    border: 3px solid var(--bg-primary);
+    box-shadow: 0 0 10px var(--accent-primary);
+}
+
+.timeline-date {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+    border-color: var(--accent-primary);
+}
+
+.timeline-content h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* Janela de código fake (Estilo VS Code) */
+.code-window {
+    background: #0d0d12;
+    border-radius: 8px;
+    border: 1px solid #333;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.window-header {
+    background: #1f1f2e;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.filename {
+    margin-left: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: #a1a1aa;
+}
+
+.code-window pre {
+    padding: 15px;
+    overflow-x: auto;
+}
+
+.code-window code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: #e0e0e0;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 150px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    border: 1px dashed var(--border-color);
+    gap: 10px;
+}
+
 @media (max-width: 968px) {
     .hero {
         flex-direction: column;
@@ -612,5 +791,9 @@ footer {
 .glass-card-mockup img {
         max-width: 320px;
         height: auto;
+    }
+
+        .skills-box {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
