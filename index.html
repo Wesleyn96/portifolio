@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wesley - Full Stack Developer</title>
+    <title>Wesley - Desenvolvedor Full Stack Junior</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,6 @@
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -37,20 +36,20 @@
             <span class="badge">Olá, eu sou o Wesley</span>
             <h1>
                 Desenvolvedor <br>
-                <span class="gradient-text">Full Stack Java</span>
+                <span class="gradient-text">Full Stack Junior</span>
             </h1>
             <p class="hero-description">
-                Transformo necessidades de negócio em software robusto e escalável.
-                Especialista em Back-End com <strong>Java e Spring Boot</strong>, com forte base em
-                <strong>Design de Interfaces</strong>.
+                Em transição de carreira, com projetos reais em produção.
+                Foco em <strong>Back-End com Node.js, Express e JWT</strong>, experiência prática com
+                <strong>Docker, PostgreSQL e PHP</strong> — incluindo CRM imobiliário em uso ativo.
             </p>
 
             <div class="hero-buttons">
                 <a href="#projetos" class="btn-primary">Ver Projetos</a>
-                <a href="https://www.linkedin.com/in/wesley-nascimento-60161639a/" target="_blank" class="btn-outline">
+                <a href="https://linkedin.com/in/wesleyn96" target="_blank" class="btn-outline">
                     LinkedIn
                 </a>
-                <a href="assets/cv/Curriculo_Wesley_Nascimento_2026.pdf" download="curriculum_wesley.pdf"
+                <a href="assets/cv/Curriculo_Wesley_Nascimento.pdf" download="curriculum_wesley.pdf"
                     target="_blank" class="btn-outline">
                     Baixar CV
                 </a>
@@ -69,18 +68,19 @@
         <div class="container">
 
             <div class="about-text">
-                <h2 class="section-title">Sobre Mim - Do Design ao <span class="gradient-text">Código Back-end</span>
+                <h2 class="section-title">Sobre Mim — Do Front ao <span class="gradient-text">Back-end Real</span>
                 </h2>
                 <p>
-                    Entender a experiência do usuário (Design) foi meu ponto de partida, mas foi no
-                    <strong>Back-end</strong> que descobri onde quero consolidar minha carreira.
-                    Gosto da sensação de resolver problemas usando a lógica e de ver o design ganhando funcionalidade.
+                    Comecei criando interfaces e landing pages, mas foi no <strong>Back-end</strong> que encontrei
+                    onde quero crescer. Aprendo resolvendo problemas reais: desenvolvi do zero o
+                    <strong>CRM Imobiliário da TWK Imóveis</strong>, sistema que substituiu planilhas manuais e
+                    está em uso ativo.
                 </p>
                 <p>
-                    Estou em plena evolução no curso de graduação de ADS e em meus cursos de especialização, mergulhando
-                    fundo no universo <strong>Java</strong>. Mais do que apenas escrever código, estou aprendendo a
-                    criar aplicações completas e escaláveis.
-                    Se existe um desafio de lógica ou de arquitetura, é lá que eu quero estar para aprender e criar.
+                    Tenho experiência prática com <strong>Node.js, TypeScript, Express, Prisma e PostgreSQL</strong>,
+                    comprovada por um teste técnico para vaga junior entregue com autenticação JWT, SOLID e
+                    arquitetura Service Pattern. Também trabalho com <strong>PHP, MySQL, Docker</strong> e automações
+                    com IA. Cursando ADS no Senac PR — aberto a estágio ou posição júnior.
                 </p>
 
             </div>
@@ -94,14 +94,67 @@
                 Projetos em <span class="gradient-text">Destaque</span>
             </h2>
             <p class="section-subtitle">
-                Uma seleção de aplicações robustas e interfaces web de alta conversão.
+                Aplicações entregues — de testes técnicos a sistemas em produção ativa.
             </p>
 
             <div class="projects-grid">
 
                 <div class="project-card">
+                    <div class="card-image card-image--code">
+                        <div class="code-preview-bg">
+                            <div class="code-line"><span class="kw">const</span> <span class="fn">createClient</span> = <span class="kw">async</span> (data: ClientDTO) => &#123;</div>
+                            <div class="code-line">  <span class="kw">await</span> clientService.<span class="fn">validate</span>(data);</div>
+                            <div class="code-line">  <span class="kw">return</span> prisma.client.<span class="fn">create</span>(&#123; data &#125;);</div>
+                            <div class="code-line">&#125;;</div>
+                        </div>
+                        <div class="card-overlay">
+                            <a href="https://github.com/Wesleyn96/Teste-Tecnico-Junior-Fullstack" target="_blank" class="btn-project">
+                                <i class="fab fa-github"></i> Ver no GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Full Stack — Gestão de Clientes</h3>
+                        <p>Teste técnico para vaga júnior: CRUD completo com diferenciação PF/PJ, integração ViaCEP,
+                            autenticação JWT, arquitetura Service Pattern e princípios SOLID com TypeScript estrito.</p>
+                        <div class="tech-tags">
+                            <span>Node.js</span>
+                            <span>TypeScript</span>
+                            <span>Express</span>
+                            <span>Prisma</span>
+                            <span>PostgreSQL</span>
+                            <span>Tailwind CSS</span>
+                            <span>Zod</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
                     <div class="card-image">
-                        <img src="assets/img/axxe_img.png" alt="API Task Management">
+                        <img src="assets/img/indicaexon_img.png" alt="CRM Imobiliário">
+                        <div class="card-overlay">
+                            <a class="btn-project btn-project--active">
+                                <i class="fas fa-check-circle"></i> Em uso ativo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>CRM Imobiliário — TWK Imóveis</h3>
+                        <p>Sistema interno que substituiu controle em planilhas. Gestão de leads e contratos,
+                            autenticação com token de sessão, notificações automáticas via WhatsApp e banco
+                            de dados relacional estruturado do zero.</p>
+                        <div class="tech-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Docker</span>
+                            <span>docker-compose</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-image">
+                        <img src="assets/img/axxe_img.png" alt="Landing Page Axxe Estúdio">
                         <div class="card-overlay">
                             <a href="https://axxeestudio.com.br/" target="_blank" class="btn-project">
                                 <i class="fas fa-external-link-alt"></i> Ver Online
@@ -109,39 +162,16 @@
                         </div>
                     </div>
                     <div class="card-content">
-                        <h3>Lading page Estúdio Audiovisual</h3>
-                        <p>Landing page de alta conversão para estúdio audiovisual, desenvolvida com foco em performance
-                            e experiência do usuário.</p>
+                        <h3>Landing Page — Estúdio Audiovisual</h3>
+                        <p>Landing page de alta conversão para estúdio audiovisual com back-end PHP, integração
+                            MySQL e hospedagem em servidor Linux.</p>
                         <div class="tech-tags">
-                            <span>HTML5, CSS3 (Variáveis e Flexbox), JavaScript (ES6+) e PHP.</span>
-                            <span>Mobile-First Design e Responsive Web Design.</span>
-                            <span>MySQL (para futuros sistemas de agendamento ou leads).</span>
-                            <span>Hospedagem em servidor Linux, FTP (FileZilla) e Gestão via cPanel.</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-image">
-                        <img src="assets/img/podcast_img.png" alt="Landing Page Web">
-                        <div class="card-overlay">
-                            <a href="http://imovelcwbpodcast.com.br/" target="_blank" class="btn-project">
-                                <i class="fas fa-external-link-alt"></i> Ver Online
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Lading page PodCast Imobiliário</h3>
-                        <p>Landing page responsiva para o ImóvelCWB Podcast, desenvolvida com HTML5, Tailwind CSS e
-                            backend em PHP para gestão de
-                            leads e integração com banco de dados MySQL via hospedagem Localweb.
-                        </p>
-                        <div class="tech-tags">
-                            <span>HTML5, CSS3, JavaScript e PHP.</span>
-                            <span>Tailwind CSS.</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
                             <span>JavaScript</span>
-                            <span>MySQL.</span>
-                            <span>Localweb, FTP (FileZilla) e Gestão via cPanel.</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>cPanel / Linux</span>
                         </div>
                     </div>
                 </div>
@@ -149,50 +179,21 @@
                 <div class="project-card">
                     <div class="card-image">
                         <img src="assets/img/vitrine_moveis.jpeg" alt="Vitrine Madeira E-commerce">
-
                         <div class="card-overlay">
                             <a href="https://github.com/Wesleyn96/vitrine-madeira" target="_blank" class="btn-project">
-                                <i class="fab fa-github"></i> Ver Código no GitHub
+                                <i class="fab fa-github"></i> Ver no GitHub
                             </a>
                         </div>
                     </div>
-
                     <div class="card-content">
                         <h3>Vitrine Madeira (E-commerce)</h3>
-
-                        <p>
-                            Interface de loja virtual moderna. Conta com carrinho de compras inteligente (persistência
-                            de dados),
-                            filtros dinâmicos por categoria/preço e design responsivo otimizado.
-                        </p>
-
+                        <p>Interface de loja virtual moderna com carrinho inteligente, filtros dinâmicos por
+                            categoria/preço e design responsivo. Deploy em produção na Vercel.</p>
                         <div class="tech-tags">
-                            <span>Next.js 14 (React)</span>
+                            <span>Next.js 14</span>
                             <span>TypeScript</span>
                             <span>Tailwind CSS</span>
-                            <span>Lucide React (Icons)</span>
-                            <span>LocalStorage API</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-image">
-                        <img src="assets/img/indicaexon_img.png" alt="CRM Exon Code">
-                        <div class="card-overlay">
-                            <a class="btn-project">
-                                <i class="fab"></i> Projeto em aplicação. Em andamento...
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>CRM Imobiliário</h3>
-                        <p>Em andamento...</p>
-                        <div class="tech-tags">
-                            <span>HTML5, CSS3, JavaScript (Vanilla), PHP 8 e Google Apps Script.</span>
-                            <span>Tailwind CSS.</span>
-                            <span>MySQL</span>
-                            <span>XAMPP (Local), Locaweb (Produção), Apache e FTP (FileZilla).</span>
+                            <span>Lucide React</span>
                         </div>
                     </div>
                 </div>
@@ -212,9 +213,9 @@
                         <h4>Análise e Desenvolvimento de Sistemas</h4>
                         <span class="edu-badge">Em Andamento</span>
                     </div>
-                    <p class="institution">Senac - SP</p>
-                    <p class="edu-desc">Foco em Engenharia de Software, Modelagem de Dados e Arquitetura de Sistemas.
-                    </p>
+                    <p class="institution">Senac PR</p>
+                    <p class="edu-desc">Conclusão prevista: Dez/2026. Foco em Engenharia de Software,
+                        Modelagem de Dados e Arquitetura de Sistemas.</p>
                 </div>
             </div>
 
@@ -224,39 +225,39 @@
                 <div class="course-item">
                     <div class="course-info">
                         <h4>Java COMPLETO (POO + Projetos)</h4>
-                        <span>25%</span>
+                        <span>Em conclusão</span>
                     </div>
                     <div class="progress-bar">
-                        <div class="progress-fill" style="width: 25%"></div>
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                </div>
+
+                <div class="course-item">
+                    <div class="course-info">
+                        <h4>Microsserviços com Spring Boot, Kubernetes e Docker</h4>
+                        <span>Em conclusão</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 40%"></div>
                     </div>
                 </div>
 
                 <div class="course-item">
                     <div class="course-info">
                         <h4>Full Stack Club</h4>
-                        <span>5%</span>
+                        <span>Em andamento</span>
                     </div>
                     <div class="progress-bar">
-                        <div class="progress-fill" style="width: 5%"></div>
+                        <div class="progress-fill" style="width: 20%"></div>
                     </div>
                 </div>
 
                 <div class="course-item">
                     <div class="course-info">
-                        <h4>Microsserviços com Spring Cloud</h4>
-                        <span>1%</span>
+                        <h4>Inglês Técnico</h4>
+                        <span>Leitura de documentação</span>
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 1%"></div>
-                    </div>
-                </div>
-
-                <div class="course-item">
-                    <div class="course-info">
-                        <h4>Nível de Inglês</h4>
-                        <span>A1 - Iniciante</span>
-                    </div>
-                    <span>Estudando</span>
+                    <span style="color: var(--text-secondary); font-size: 0.9rem;">Nível básico — estudando</span>
                 </div>
 
             </div>
@@ -274,12 +275,20 @@
                     <h3><i class="fas fa-server"></i> Back-End & Dados</h3>
                     <div class="skill-box">
                         <div class="skill-item">
-                            <i class="devicon-java-plain colored"></i>
-                            <span>Java 17+</span>
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span>Node.js</span>
                         </div>
                         <div class="skill-item">
-                            <i class="devicon-spring-original colored"></i>
-                            <span>Spring Boot</span>
+                            <i class="devicon-express-original" style="color: #a1a1aa"></i>
+                            <span>Express</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-php-plain colored"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-postgresql-plain colored"></i>
+                            <span>PostgreSQL</span>
                         </div>
                         <div class="skill-item">
                             <i class="devicon-mysql-plain colored"></i>
@@ -287,6 +296,14 @@
                         </div>
                         <div class="skill-item">
                             <i class="fas fa-database" style="color: #a1a1aa"></i>
+                            <span>Prisma ORM</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-key" style="color: #a1a1aa"></i>
+                            <span>JWT / Auth</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-table" style="color: #a1a1aa"></i>
                             <span>SQL</span>
                         </div>
                     </div>
@@ -301,11 +318,23 @@
                         </div>
                         <div class="skill-item">
                             <i class="devicon-docker-plain colored"></i>
-                            <span>Docker (Básico)</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-postman-plain colored"></i>
+                            <span>Postman</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-vercel-original" style="color: #ffffff"></i>
+                            <span>Vercel</span>
                         </div>
                         <div class="skill-item">
                             <i class="devicon-vscode-plain colored"></i>
                             <span>VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-figma-plain colored"></i>
+                            <span>Figma</span>
                         </div>
                     </div>
                 </div>
@@ -321,7 +350,6 @@
                             <i class="devicon-css3-plain colored"></i>
                             <span>CSS3</span>
                         </div>
-
                         <div class="skill-item">
                             <i class="devicon-javascript-plain colored"></i>
                             <span>JavaScript</span>
@@ -330,7 +358,6 @@
                             <i class="devicon-typescript-plain colored"></i>
                             <span>TypeScript</span>
                         </div>
-
                         <div class="skill-item">
                             <i class="devicon-nextjs-plain"></i>
                             <span>Next.js</span>
@@ -339,10 +366,27 @@
                             <i class="devicon-tailwindcss-plain colored"></i>
                             <span>Tailwind</span>
                         </div>
+                    </div>
+                </div>
 
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> IA & Automação</h3>
+                    <div class="skill-box">
                         <div class="skill-item">
-                            <i class="devicon-figma-plain colored"></i>
-                            <span>Figma</span>
+                            <i class="fas fa-brain" style="color: #10a37f"></i>
+                            <span>OpenAI API</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot" style="color: #cc785c"></i>
+                            <span>Claude API</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram" style="color: #ea4b71"></i>
+                            <span>n8n</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-bolt" style="color: #ff4a00"></i>
+                            <span>Make / Zapier</span>
                         </div>
                     </div>
                 </div>
@@ -361,42 +405,23 @@
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jan 2026</div>
+                    <div class="timeline-date">Abr 2025</div>
                     <div class="timeline-content">
-                        <h3>Front-End Moderno com Next.js</h3>
-                        <p>Desenvolvi o "Vitrine Madeira", focando em persistência de dados no navegador (LocalStorage)
-                            e filtros dinâmicos com TypeScript.</p>
+                        <h3>Teste Técnico Full Stack — Node.js + TypeScript</h3>
+                        <p>Desenvolvi uma aplicação completa com CRUD PF/PJ, autenticação JWT, arquitetura
+                            Service Pattern e TypeScript estrito. Integrei a API ViaCEP para autopreenchimento
+                            de endereço por CEP.</p>
                         <div class="code-window">
                             <div class="window-header">
                                 <span class="dot red"></span><span class="dot yellow"></span><span
                                     class="dot green"></span>
-                                <span class="filename">Carrinho.tsx</span>
+                                <span class="filename">clientService.ts</span>
                             </div>
-                            <pre><code>// Persistindo dados do carrinho
-useEffect(() => {
-  const saved = localStorage.getItem("cart");
-  if (saved) setCart(JSON.parse(saved));
-}, []);</code></pre>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jan 2026</div>
-                    <div class="timeline-content">
-                        <h3>Microsserviços com Spring Cloud</h3>
-                        <p>Comecei a estudar como quebrar aplicações monolíticas. Aprendi sobre Eureka Server e API
-                            Gateway.</p>
-                        <div class="code-window">
-                            <div class="window-header">
-                                <span class="dot red"></span><span class="dot yellow"></span><span
-                                    class="dot green"></span>
-                                <span class="filename">application.properties</span>
-                            </div>
-                            <pre><code>spring.application.name=eureka-server
-server.port=8761
-eureka.client.register-with-eureka=false</code></pre>
+                            <pre><code>// Validação com Zod + Service Pattern
+export const createClient = async (data: CreateClientDTO) => {
+  const parsed = clientSchema.parse(data);
+  return prisma.client.create({ data: parsed });
+};</code></pre>
                         </div>
                     </div>
                 </div>
@@ -405,22 +430,47 @@ eureka.client.register-with-eureka=false</code></pre>
                     <div class="timeline-dot"></div>
                     <div class="timeline-date">Dez 2025</div>
                     <div class="timeline-content">
-                        <h3>Implementando o CRM Imobiliário</h3>
-                        <p>Desafio de lógica: Criar o relacionamento entre "Imóveis" e "Proprietários" no banco de dados
-                            MySQL.</p>
-                        <div class="image-placeholder">
-                            <i class="fas fa-image"></i> Print do Diagrama ER
+                        <h3>CRM Imobiliário — Em Produção</h3>
+                        <p>Entregamos o sistema em uso ativo na TWK Imóveis. Implementei notificações
+                            automáticas via WhatsApp e corrigi vulnerabilidades de segurança no sistema
+                            de autenticação com token de sessão.</p>
+                        <div class="code-window">
+                            <div class="window-header">
+                                <span class="dot red"></span><span class="dot yellow"></span><span
+                                    class="dot green"></span>
+                                <span class="filename">docker-compose.yml</span>
+                            </div>
+                            <pre><code>services:
+  app:
+    build: .
+    ports: ["80:80"]
+    depends_on: [db]
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: crm_imobiliario</code></pre>
                         </div>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date">Nov 2025</div>
+                    <div class="timeline-date">Jan 2026</div>
                     <div class="timeline-content">
-                        <h3>Mergulhando em POO Java</h3>
-                        <p>Entendendo na prática os conceitos de Herança e Polimorfismo criando um sistema de contas
-                            bancárias.</p>
+                        <h3>Front-End Moderno com Next.js</h3>
+                        <p>Desenvolvi o "Vitrine Madeira", focando em persistência de dados no navegador
+                            (LocalStorage) e filtros dinâmicos com TypeScript. Deploy em produção na Vercel.</p>
+                        <div class="code-window">
+                            <div class="window-header">
+                                <span class="dot red"></span><span class="dot yellow"></span><span
+                                    class="dot green"></span>
+                                <span class="filename">Carrinho.tsx</span>
+                            </div>
+                            <pre><code>useEffect(() => {
+  const saved = localStorage.getItem("cart");
+  if (saved) setCart(JSON.parse(saved));
+}, []);</code></pre>
+                        </div>
                     </div>
                 </div>
 
@@ -434,7 +484,7 @@ eureka.client.register-with-eureka=false</code></pre>
             <p>Estou disponível para oportunidades como <strong>Estágio</strong> ou <strong>Dev Júnior</strong>.</p>
 
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/wesley-nascimento-60161639a/" target="_blank" class="social-btn">
+                <a href="https://linkedin.com/in/wesleyn96" target="_blank" class="social-btn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
                 <a href="https://github.com/Wesleyn96" target="_blank" class="social-btn">
@@ -443,7 +493,7 @@ eureka.client.register-with-eureka=false</code></pre>
                 <a href="https://wa.me/41997775083" target="_blank" class="social-btn">
                     <i class="fab fa-whatsapp"></i>
                 </a>
-                <a href="wesleynascimentojob@gmail.com" class="social-btn">
+                <a href="mailto:wesleynascimentojob@gmail.com" class="social-btn">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>

@@ -719,6 +719,42 @@ footer {
     gap: 10px;
 }
 
+/* --- PROJECT CARD COM FUNDO CÓDIGO (sem imagem) --- */
+.card-image--code {
+    background: #0d0d12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.code-preview-bg {
+    width: 100%;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    line-height: 1.8;
+}
+
+.code-line {
+    color: #e0e0e0;
+    white-space: pre;
+}
+
+.code-line .kw { color: #c678dd; }
+.code-line .fn { color: #61afef; }
+
+/* Estilo especial para botão "em uso ativo" */
+.btn-project--active {
+    cursor: default;
+    border-color: #27c93f;
+    color: #27c93f;
+}
+
+.btn-project--active:hover {
+    background: rgba(39, 201, 63, 0.15);
+    color: #27c93f;
+}
+
 @media (max-width: 968px) {
     .hero {
         flex-direction: column;
