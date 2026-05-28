@@ -29,7 +29,21 @@
             <li><a href="#habilidades">Habilidades</a></li>
         </ul>
         <a href="#contato" class="btn-contact">Fale Comigo</a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
+
+    <!-- Menu mobile -->
+    <div class="nav-mobile" id="navMobile">
+        <a href="#sobre" class="nav-mobile-link">Sobre</a>
+        <a href="#projetos" class="nav-mobile-link">Projetos</a>
+        <a href="#habilidades" class="nav-mobile-link">Habilidades</a>
+        <a href="#diario" class="nav-mobile-link">Diário</a>
+        <a href="#contato" class="nav-mobile-link">Contato</a>
+    </div>
 
     <section class="hero">
         <div class="hero-content">
@@ -506,6 +520,25 @@ export const createClient = async (data: CreateClientDTO) => {
     </footer>
 
 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMobile = document.getElementById('navMobile');
+        const mobileLinks = document.querySelectorAll('.nav-mobile-link');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            navMobile.classList.toggle('open');
+            document.body.style.overflow = navMobile.classList.contains('open') ? 'hidden' : '';
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('open');
+                navMobile.classList.remove('open');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
 </body>
 
 </html>
