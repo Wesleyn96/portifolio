@@ -16,6 +16,8 @@
     --text-secondary: #a1a1aa;
     --glass-effect: rgba(255, 255, 255, 0.05);
     --border-color: rgba(255, 255, 255, 0.1);
+    --nav-height: 72px;
+    --section-px: 10%;
 }
 
 body {
@@ -59,7 +61,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 10%;
+    padding: 0 var(--section-px);
+    height: var(--nav-height);
     position: fixed;
     width: 100%;
     top: 0;
@@ -173,8 +176,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
-    padding: 0 10%;
-    padding-top: 80px;
+    padding: var(--nav-height) var(--section-px) 0;
     gap: 2rem;
 }
 
@@ -268,7 +270,7 @@ h1 {
 
 /* ===== ABOUT ===== */
 .about-section {
-    padding: 100px 10%;
+    padding: 100px var(--section-px);
     background: var(--bg-secondary);
 }
 
@@ -347,7 +349,7 @@ h1 {
 
 /* ===== PROJECTS ===== */
 .projects-section {
-    padding: 100px 10%;
+    padding: 100px var(--section-px);
     background: var(--bg-primary);
 }
 
@@ -478,7 +480,7 @@ h1 {
 
 /* ===== EDUCATION ===== */
 .education-section {
-    padding: 100px 10%;
+    padding: 100px var(--section-px);
     background: var(--bg-secondary);
     border-top: 1px solid var(--border-color);
 }
@@ -575,7 +577,7 @@ h1 {
 
 /* ===== FOOTER ===== */
 footer {
-    padding: 80px 10% 40px;
+    padding: 80px var(--section-px) 40px;
     background: var(--bg-primary);
     text-align: center;
     border-top: 1px solid var(--border-color);
@@ -631,7 +633,7 @@ footer {
 
 /* ===== SKILLS ===== */
 .skills-section {
-    padding: 100px 10%;
+    padding: 100px var(--section-px);
     background: var(--bg-secondary);
 }
 
@@ -686,7 +688,7 @@ footer {
 
 /* ===== DIÁRIO (TIMELINE) ===== */
 .journal-section {
-    padding: 100px 10%;
+    padding: 100px var(--section-px);
     background: var(--bg-primary);
 }
 
@@ -855,8 +857,9 @@ footer {
    RESPONSIVIDADE — TABLET (≤ 968px)
    ============================================= */
 @media (max-width: 968px) {
-    nav {
-        padding: 1.2rem 5%;
+    :root {
+        --nav-height: 60px;
+        --section-px: 5%;
     }
 
     .nav-links,
@@ -868,12 +871,17 @@ footer {
         display: flex;
     }
 
+    .logo {
+        font-size: 1.3rem;
+    }
+
     .hero {
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        padding: 120px 5% 60px;
-        gap: 2.5rem;
+        padding-top: calc(var(--nav-height) + 40px);
+        padding-bottom: 60px;
+        gap: 2rem;
     }
 
     .hero-content {
@@ -891,20 +899,20 @@ footer {
     }
 
     .hero-visual {
-        width: 280px;
-        height: 280px;
+        width: 260px;
+        height: 260px;
     }
 
     .glass-card-mockup img {
-        max-width: 280px;
+        max-width: 260px;
     }
 
     h1 {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     .about-section,
@@ -912,7 +920,13 @@ footer {
     .education-section,
     .skills-section,
     .journal-section {
-        padding: 70px 5%;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    footer {
+        padding-top: 60px;
+        padding-bottom: 30px;
     }
 
     .container {
@@ -934,43 +948,54 @@ footer {
 }
 
 /* =============================================
-   RESPONSIVIDADE — MOBILE (≤ 640px)
+   RESPONSIVIDADE — MOBILE (≤ 600px)
    ============================================= */
-@media (max-width: 640px) {
+@media (max-width: 600px) {
+    :root {
+        --nav-height: 54px;
+        --section-px: 5%;
+    }
+
+    .logo {
+        font-size: 1.15rem;
+    }
+
     .hero {
-        padding: 110px 5% 50px;
-        gap: 2rem;
+        padding-top: calc(var(--nav-height) + 30px);
+        padding-bottom: 50px;
+        gap: 1.5rem;
     }
 
     h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .section-title {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
     }
 
     .hero-visual {
-        width: 220px;
-        height: 220px;
+        width: 200px;
+        height: 200px;
     }
 
     .glass-card-mockup img {
-        max-width: 220px;
+        max-width: 200px;
     }
 
     .badge {
-        font-size: 0.8rem;
+        font-size: 0.78rem;
+        padding: 0.4rem 0.9rem;
     }
 
     .hero-description {
-        font-size: 0.95rem;
+        font-size: 0.92rem;
     }
 
     .btn-primary,
     .btn-outline {
-        padding: 0.75rem 1.25rem;
-        font-size: 0.88rem;
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85rem;
     }
 
     .about-section,
@@ -978,29 +1003,37 @@ footer {
     .education-section,
     .skills-section,
     .journal-section {
-        padding: 60px 5%;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    footer {
+        padding-top: 50px;
+        padding-bottom: 25px;
     }
 
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: 1.2rem;
     }
 
     .skill-box {
         grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+        gap: 0.8rem;
         padding: 1rem;
     }
 
     .skill-item i {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .skill-item span {
-        font-size: 0.72rem;
+        font-size: 0.7rem;
     }
 
     .skills-categories {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     .education-section .container {
@@ -1014,53 +1047,58 @@ footer {
     }
 
     .column-title {
-        font-size: 1.2rem;
-    }
-
-    footer {
-        padding: 60px 5% 30px;
+        font-size: 1.15rem;
+        margin-bottom: 1.2rem;
     }
 
     .footer-content h2 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .social-links {
-        gap: 1rem;
-        margin: 2rem 0;
+        gap: 0.8rem;
+        margin: 1.5rem 0;
     }
 
     .social-btn {
-        width: 48px;
-        height: 48px;
-        font-size: 1.2rem;
+        width: 46px;
+        height: 46px;
+        font-size: 1.15rem;
     }
 
     .timeline {
-        padding-left: 22px;
+        padding-left: 20px;
     }
 
     .timeline-dot {
-        left: -28px;
+        left: -26px;
         width: 12px;
         height: 12px;
     }
 
     .timeline-content {
-        padding: 1.2rem;
+        padding: 1rem;
+    }
+
+    .timeline-content h3 {
+        font-size: 0.95rem;
     }
 
     .code-window code {
-        font-size: 0.72rem;
+        font-size: 0.7rem;
     }
 
     .section-subtitle {
-        font-size: 0.9rem;
-        margin-bottom: 2.5rem;
+        font-size: 0.88rem;
+        margin-bottom: 2rem;
     }
 
     .nav-mobile a {
         font-size: 1.3rem;
+    }
+
+    .card-content {
+        padding: 1.2rem;
     }
 }
 
@@ -1068,21 +1106,30 @@ footer {
    RESPONSIVIDADE — MOBILE PEQUENO (≤ 380px)
    ============================================= */
 @media (max-width: 380px) {
+    :root {
+        --nav-height: 50px;
+        --section-px: 4%;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
     h1 {
-        font-size: 1.9rem;
+        font-size: 1.75rem;
     }
 
     .section-title {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .hero-visual {
-        width: 180px;
-        height: 180px;
+        width: 170px;
+        height: 170px;
     }
 
     .glass-card-mockup img {
-        max-width: 180px;
+        max-width: 170px;
     }
 
     .skill-box {
@@ -1091,7 +1138,11 @@ footer {
 
     .btn-primary,
     .btn-outline {
-        padding: 0.65rem 1rem;
-        font-size: 0.82rem;
+        padding: 0.6rem 0.9rem;
+        font-size: 0.8rem;
+    }
+
+    .hero-buttons {
+        gap: 0.5rem;
     }
 }
