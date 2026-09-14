@@ -66,7 +66,7 @@ nav {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 1100;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
 }
@@ -957,7 +957,7 @@ footer {
     }
 
     .hero {
-        padding-top: calc(var(--nav-height) + 30px);
+        padding-top: calc(var(--nav-height) + 12px);
         padding-bottom: 50px;
         gap: 1.5rem;
     }
@@ -980,7 +980,8 @@ footer {
     }
 
     .badge {
-        font-size: 0.78rem;
+        font-size: 1.05rem;
+        font-weight: 600;
     }
 
     .hero-description {
